@@ -1,0 +1,77 @@
+/* Do not change this file for this exercise*/
+
+@media screen and (max-width: 400px) {
+    .board {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.task-status {
+    border-radius: 10px;
+    text-align: center;
+    min-width: 4em;
+    height: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 5px;
+}
+
+.task-form-row {
+    display: flex;
+    max-width: 625px;
+}
+
+.board {
+    display: flex;
+}
+
+.card {
+    border: solid;
+    margin: 10px;
+    box-shadow: 3px 3px lightgray;
+    padding: 10px;
+}
+
+.column {
+    min-width: 175px;
+}
+
+.left-side {
+    flex: 90%;
+}
+
+.right-side {
+    flex: 10%;
+}
+
+.todo {
+    background-color: red;
+}
+
+.doing {
+    background-color: yellow;
+}
+
+.done {
+    background-color: green;
+}
+
+.task-menu-items {
+    display: none; 
+    padding: 10px;
+    list-style: none;
+}
+
+.task-menu-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.task-menu:hover .task-menu-items {
+    display: block;
+}
