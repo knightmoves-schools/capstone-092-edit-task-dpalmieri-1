@@ -88,4 +88,13 @@ function deleteTask(id){
     drawAllCards();
 }
 
+function editTask(id){
+    let task = tasks[id];
+    
+    document.getElementById('task-id').value = id;
+    document.getElementById('task-description').value = task.description;
+    document.getElementById('task-status').value = task.status;
+    document.getElementById('add-task').innerHTML = 'Update';
+}
+
 drawAllCards();
